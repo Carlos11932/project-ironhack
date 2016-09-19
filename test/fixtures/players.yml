@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sumoner_name: MyString
+  sumoner_id: 1
+  most_played_champ_id: 1
+  player_league: MyString
+  player_icon: MyString
+  most_played_champ_img: MyString
+  user: one
+
+two:
+  sumoner_name: MyString
+  sumoner_id: 1
+  most_played_champ_id: 1
+  player_league: MyString
+  player_icon: MyString
+  most_played_champ_img: MyString
+  user: two
