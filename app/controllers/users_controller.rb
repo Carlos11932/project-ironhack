@@ -9,7 +9,7 @@ class UsersController < ApplicationController
         if @user.player == nil
         	@user.player = Player.create(sumoner_name: @user.name)
         end	
-        #render "users/profile"
-        redirect_to player_profile_path
+        render "users/profile"
+        #redirect_to player_profile_path
     end
 end

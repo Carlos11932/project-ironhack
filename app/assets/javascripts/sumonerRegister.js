@@ -100,10 +100,12 @@
 $(document).ready(function(){
     var url = "https://euw.api.pvp.net/api/lol/euw/v1.4/summoner/by-name/";
     var posturl = "?api_key=RGAPI-1AF0CE56-4B91-4D73-B4C7-C9F419011E1C";
-    $('#new_sumoner').submit(function(e) {
-      e.preventDefault(); 
+
+    $('#new_sumoner').on('submit', function(e) {
+      e.preventDefault();
       var summonerName = $('#user_name').val();
       console.log("prueba");
+      var self = this;
        
       $.ajax({
         type: "GET",
@@ -111,7 +113,7 @@ $(document).ready(function(){
         success: function(response){
             console.log(response);
 
-            document.getElementById("new_sumoner").submit();
+            self.submit();
         // $.ajax({
         //   type: "GET",
         //   url: "https://euw.api.pvp.net/api/lol/euw/v2.5/league/by-summoner/"+ summonerId +"/entry" + posturl,  
