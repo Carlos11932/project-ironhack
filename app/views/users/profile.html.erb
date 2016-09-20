@@ -1,0 +1,20 @@
+
+
+
+<div id="bg">
+<h2><%= current_user.name %> profile!</h2>
+<section>
+  <nav>
+    <div></div>
+    <ul>
+      <li data-xcoord="0px" class="active" id="profile_view"><%= link_to "Profile", profile_path%></li>
+      <li data-xcoord="160px" id="team_view"><%= link_to "Team", profile_path%></li>
+      <li data-xcoord="320px" id="search_view"><%= link_to "Search", profile_path%></li>
+      <li data-xcoord="480px">Store</li>
+    </ul>
+  </nav>
+</section>
+<p>
+<strong>Email:</strong> <%= current_user.email %>
+</p>
+</div>
